@@ -1,0 +1,231 @@
+extends playout
+
+block head
+  doctype html
+
+  html(lang='ko')
+    head
+      meta(charset='utf-8')
+      |         
+      meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+      |         
+      meta(name='description', content='')
+      |         
+      meta(name='author', content='')
+      |         
+      title &#xB044;&#xD22C;&#xBDF0;
+      // Favicon
+      link(rel='icon', type='image/x-icon', href='https://kkutu.1325ok.com/main/assets/favicon.ico')
+      // Bootstrap icons
+      link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
+      // Core theme CSS (includes Bootstrap)
+      link(href='https://kkutu.1325ok.com/main/css/styles.css', rel='stylesheet')
+    |     
+    body.d-flex.flex-column.h-100
+      main.flex-shrink-0
+        // Navigation
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+          .container.px-5
+            a.navbar-brand(href='index.html') &#xB044;&#xD22C;&#xBDF0;
+            |                     
+            button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            |                     
+            #navbarSupportedContent.collapse.navbar-collapse
+              ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                li.nav-item
+                  a.nav-link(href='https://kkutu.1325ok.com') &#xD648;
+                |                             
+                li.nav-item
+                  a.nav-link(href='https://kkutu.1325ok.com/?server=0') &#xD50C;&#xB808;&#xC774;
+                |                             
+                li.nav-item
+                  a.nav-link(href='about.html') &#xC18C;&#xAC1C;
+                |                             
+                li.nav-item
+                  a.nav-link(href='https://kkutu.1325ok.com/app/index.html') APP
+                |                             
+                li.nav-item.dropdown
+                  a#navbarDropdownBlog.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false') &#xAC1C;&#xBC1C;&#xC790;
+                  |                                 
+                  ul.dropdown-menu.dropdown-menu-end(aria-labelledby='navbarDropdownBlog')
+                    li
+                      a.dropdown-item(href='https://www.1325ok.com') &#xAC1C;&#xBC1C;&#xC790;: 1325OK GAMES
+                    |                                     
+                    li
+                      a.dropdown-item(href='https://www.youtube.com/channel/UCQKs-QTEIp1OoAVDzkB4iew/about') &#xBD80;&#xAC1C;&#xBC1C;&#xC790;: 3D Youtuber
+        // Header
+        header.bg-dark.py-5
+          .container.px-5
+            .row.gx-5.align-items-center.justify-content-center
+              .col-lg-8.col-xl-7.col-xxl-6
+                .my-5.text-center.text-xl-start
+                  h1.display-5.fw-bolder.text-white.mb-2 &#xB044;&#xD22C;&#xBDF0;
+                  |                                 
+                  p.lead.fw-normal.text-white-50.mb-4 &#xC6F9;&#xC73C;&#xB85C; &#xD558;&#xB294; &#xB05D;&#xB9D0;&#xC787;&#xAE30;!
+                  |                                 
+                  .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xl-start
+                    a.btn.btn-primary.btn-lg.px-4.me-sm-3(href='https://kkutu.1325ok.com/?server=0') &#xD50C;&#xB808;&#xC774;
+                    |                                     
+                    a.btn.btn-outline-light.btn-lg.px-4(href='#!') &#xD50C;&#xB808;&#xC774; &#xBC29;&#xBC95;
+              |                         
+              .col-xl-5.col-xxl-6.d-none.d-xl-block.text-center
+                img.img-fluid.rounded-3.my-5(src='./끄투뷰.png', alt='...')
+                
+                
+                
+                
+
+        
+        
+        
+                
+        
+        // Features section
+        section#features.py-5
+          .container.px-5.my-5
+            .row.gx-5
+              .col-lg-4.mb-5.mb-lg-0
+                h2.fw-bolder.mb-0 &#xB044;&#xD22C;&#xBDF0;&#xAC00; &#xBB34;&#xC5C7;&#xC778;&#xAC00;&#xC694;?
+              |                         
+              .col-lg-8
+                .row.gx-5.row-cols-1.row-cols-md-2
+                  .col.mb-5.h-100
+                    .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
+                      i.bi.bi-collection
+                    |                                     
+                    h2.h5 &#xB2E4; &#xAC19;&#xC774;&#xD558;&#xB294; &#xB05D;&#xB9D0;&#xC787;&#xAE30;!
+                    |                                     
+                    p.mb-0
+                      | &#xC5EC;&#xB7EC; &#xC0AC;&#xB78C;&#xB4E4;&#xACFC; &#xB05D;&#xB9D0;&#xC787;&#xAE30;&#xB97C; &#xD558;&#xACE0;
+                      br
+                      | &#xCE5C;&#xAD6C;&#xB4E4;&#xB3C4; &#xCD08;&#xB300;&#xD574;&#xC11C; &#xB2E4; &#xAC19;&#xC774; &#xB05D;&#xB9D0;&#xC787;&#xAE30;&#xB97C; &#xC990;&#xACA8;&#xBCF4;&#xC138;&#xC694;!
+                  |                                 
+                  .col.mb-5.h-100
+                    .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
+                      i.bi.bi-building
+                    |                                     
+                    h2.h5 &#xC5EC;&#xB7EC; &#xAC00;&#xC9C0; &#xAC8C;&#xC784; &#xBAA8;&#xB4DC;&#xB85C; &#xB354; &#xC7AC;&#xBBF8;&#xC788;&#xAC8C;!
+                    |                                     
+                    p.mb-0 &#xB05D;&#xB9D0;&#xC787;&#xAE30;&#xB9CC; &#xD558;&#xB294; &#xAC8C; &#xC7AC;&#xBBF8;&#xC5C6;&#xB2E4;&#xBA74; &#xCFF5;&#xCFF5;&#xB530;&#xC640; &#xC55E;&#xB9D0;&#xC787;&#xAE30; &#xB4F1;&#xB4F1; &#xACC4;&#xC18D  ; &#xCD94;&#xAC00;&#xB418;&#xB294; &#xB2E4;&#xC591;&#xD55C; &#xAC8C;&#xC784; &#xBAA8;&#xB4DC;&#xB85C; &#xD50C;&#xB808;&#xC774;&#xD574;&#xBCF4;&#xC138;&#xC694;!
+        // Testimonial section
+        .py-5.bg-light
+          .container.px-5.my-5
+            .row.gx-5.justify-content-center
+              .col-lg-10.col-xl-7
+                .text-center
+                  .fs-4.mb-4 &quot;&#xC6F9;&#xC73C;&#xB85C; &#xB05D;&#xB9D0;&#xC787;&#xAE30;&#xB97C; &#xC7AC;&#xBBF8;&#xC788;&#xAC8C; &#xD50C;&#xB808;&#xC774;&#xD574;&#xBCF4;&#xC138;&#xC694;!&quot;
+                  |                                 
+                  .d-flex.align-items-center.justify-content-center
+                  
+        
+        // Testimonial section
+        .py-5.bg-light
+          .container.px-5.my-5
+            .row.gx-5.justify-content-center
+              .col-lg-10.col-xl-7
+                .text-center
+        
+        div(style='float: left; justify-content: center;  margin-top: -120px; width: 50%;')
+          div.server-list-box
+            h3.server-list-title
+              a#server-refresh
+                +FA('refresh')
+                +Expl(L('serverRefresh'))
+              label= L('serverList')
+              label#server-total(style='color: #AAA; font-size: 13px;')
+            div#server-list
+        
+        
+        
+        // Blog preview section
+        section.py-5
+          .container.px-5.my-5
+            .row.gx-5.justify-content-center
+              .col-lg-8.col-xl-6
+                .text-center
+                  h2.fw-bolder From our blog
+                  |                                 
+                  p.lead.fw-normal.text-muted.mb-5
+                    | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.
+            |                     
+            .row.gx-5
+              .col-lg-4.mb-5
+                .card.h-100.shadow.border-0
+                  img.card-img-top(src='./끄투뷰.png', alt='...')
+                  |                                 
+                  .card-body.p-4
+                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 1
+                    |                                     
+                    a.text-decoration-none.link-dark.stretched-link(href='#!')
+                      h5.card-title.mb-3 &#xC81C;&#xBAA9;
+                    |                                     
+                    p.card-text.mb-0 &#xB0B4;&#xC6A9;
+                  |                                 
+                  .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                    .d-flex.align-items-end.justify-content-between
+                      .d-flex.align-items-center
+                        img.rounded-circle.me-3(src='https://dummyimage.com/40x40/ced4da/6c757d', alt='...')
+                        |                                             
+                        .small
+                          .fw-bold &#xACF5;&#xC9C0;&#xC0AC;&#xD56D;
+                          |                                                 
+                          .text-muted 2022&#xB144; 5&#xC6D4; 1&#xC77C;
+              |                         
+              .col-lg-4.mb-5
+                .card.h-100.shadow.border-0
+                  img.card-img-top(src='https://dummyimage.com/600x350/adb5bd/495057', alt='...')
+                  |                                 
+                  .card-body.p-4
+                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 &#xC548;&#xB0B4;
+                    |                                     
+                    h5.card-title.mb-3 &#xB044;&#xD22C;&#xBDF0;&#xB97C; &#xC571;&#xC73C;&#xB85C; &#xB354; &#xD3B8;&#xB9AC;&#xD558;&#xAC8C; &#xD50C;&#xB808;&#xC774;&#xD558;&#xC138;&#xC694;!
+                    |                                     
+                    p.card-text.mb-0
+                      | &#xB044;&#xD22C;&#xBDF0;&#xB97C; &#xD55C;&#xBC88;&#xC758; &#xD074;&#xB9AD;&#xC73C;&#xB85C; &#xB354; &#xBE60;&#xB974;&#xAC8C; &#xD50C;&#xB808;&#xC774;&#xD558;&#xC138;&#xC694;!
+                      br
+                      br
+                    h5
+                      b &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;
+                    h6 &#xAC1C;&#xBC1C;:1325OK GAMES
+                    |                                         
+                    a.btn.btn-lg.btn-block.btn-outline-primary(type='button', href='https://dl.1325ok.com/kkutu-view/Setup.exe') Windows
+                    |                                         &nbsp;&nbsp;
+                    |                                         
+                    button.btn.btn-lg.btn-block.btn-outline-success(type='button', onclick="javascript:alert('준비중입니다!\n나중에 다시 시도해주세요!');") Android
+                    |                                     
+                    p
+              |                         
+              .col-lg-4.mb-5
+                .card.h-100.shadow.border-0
+                  img.card-img-top(src='https://dummyimage.com/600x350/6c757d/343a40', alt='...')
+                  |                                 
+                  .card-body.p-4
+                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 &#xC548;&#xB0B4;
+                    |                                     
+                    a.text-decoration-none.link-dark.stretched-link(href='#!')
+                      h5.card-title.mb-3 &#xB044;&#xD22C;&#xBDF0;&#xB294; &#xACC4;&#xC18D; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xB429;&#xB2C8;&#xB2E4;!
+                    |                                     
+                    p.card-text.mb-0 &#xBC84;&#xADF8;&#xAC00; &#xC788;&#xB2E4;&#xBA74; 1325ok.help@gmail.com&#xC73C;&#xB85C; &#xBCF4;&#xB0B4;&#xC8FC;&#xC138;&#xC694;!
+            // Call to action
+      // Footer
+      footer.bg-dark.py-4.mt-auto
+        .container.px-5
+          .row.align-items-center.justify-content-between.flex-column.flex-sm-row
+            .col-auto
+              .small.m-0.text-white Copyright &copy; &#xB044;&#xD22C;&#xBDF0; 2022
+            |                     
+            .col-auto
+              a.link-light.small(href='#!') Privacy
+              |                         
+              span.text-white.mx-1 &middot;
+              |                         
+              a.link-light.small(href='#!') Terms
+              |                         
+              span.text-white.mx-1 &middot;
+              |                         
+              a.link-light.small(href='#!') Contact
+      // Bootstrap core JS
+      script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+      // Core theme JS
+      script(src='https://kkutu.1325ok.com/main/js/scripts.js')

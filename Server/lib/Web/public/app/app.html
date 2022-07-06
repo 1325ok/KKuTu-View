@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+  <meta charset="UTF-8">
+  <title>끄투뷰 APP</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+</head>
+
+<body>
+    <div class="window" style="max-width: 100%">
+        <div class="title-bar">
+          <div class="title-bar-text">끄투뷰 APP</div>
+          <div class="title-bar-controls">
+          </div>
+        </div>
+        <div class="window-body">
+          <menu role="tablist">
+            <button role="tab" aria-controls="Windows" aria-selected="true">Windows</button>
+            <button role="tab" aria-controls="Android">Android</button>
+          </menu>
+      
+          <article role="tabpanel" id="Windows">
+            <iframe width="100%" height="500" src="https://kkutu.1325ok.com/app/Windows.html" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </article>
+      
+          <article role="tabpanel" hidden id="Android">
+            <iframe width="100%" height="500" src="https://kkutu.1325ok.com/app/Android.html" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </article>
+          <section class="field-row" style="justify-content: flex-end">
+          </section>
+        </div>
+      </div>
+      
+      <script src="tab.js"></script>
+
+</body>
+
+
+</html>
+
+
